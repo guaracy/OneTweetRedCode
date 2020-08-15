@@ -1,12 +1,28 @@
 # Red
 
-A ideia inicial é escrever código GUI completo em Red, com alguma utilidade e que possa ser colado em um tweet (até 280 caracteres). Devido ao tamanho, geralmente a entrada de algum dado não será checada
+A ideia inicial é escrever código GUI completo em Red, com alguma utilidade e que possa ser colado em um tweet (até 280 caracteres). Devido ao tamanho, geralmente a entrada de algum dado não será checada, o título da janela pode ser omitido, etc. 
 
+Não é necessário que você possua [Red](https://www.red-lang.org/) instalado no seu computador para testar os exemplos. Apenas execute o programa **menu.exe** no Windows ou **menu** no Linux. Importante salientar que o executável
 
 [Releases](https://github.com/guaracy/Red/releases/tag/1)
 - Os executáveis para Windows foram gerados no Linux usando ```red -r -t windows code.red``` o que significa que podem não terem sido testados corretamente. 
 - Os executáveis para Linux foram gerados por uma versão em desenvolvimento para o GTK e podem apresentar alguns problemas até que a versão [0.66](https://trello.com/b/FlQ6pzdB/red-tasks-overview) estável esteja disponível. Você pode baixar a versão em desenvolvimento pelo [link](https://static.red-lang.org/dl/branch/GTK/linux/red-latest)
-- 
+
+## Menu
+
+Le todos os arquivos .red e coloca-os em um lista. Ao ser selecionado, o programa é mostrado no texto à direita e pode ser executado clicando no botão Run. É possível efetuar alterações no fonte e rodá-lo novamente. As alterações não serão gravadas. Para caber nos 280 caracteres, não foi colocado um título na janela do programa.
+
+```red
+Red [Needs: 'View]
+view [
+ l: text-list 150x300
+ on-select [a/text: read to-file l/data/(l/selected)]
+ a: area 400x300 bold font-name system/view/fonts/fixed
+ do [l/data: collect [foreach f read %. [ if ".red" = suffix? f [keep to-string f]]]]
+ return
+ button "Run" [do a/text]
+]
+```
 
 ## Calculadora de datas
 
