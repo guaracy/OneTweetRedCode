@@ -2,7 +2,7 @@
 
 A ideia inicial é escrever código GUI completo em Red, com alguma utilidade e que possa ser colado em um tweet (até 280 caracteres). Devido ao tamanho, geralmente a entrada de algum dado não será checada, o título da janela pode ser omitido, etc. 
 
-Não é necessário que você possua [Red](https://www.red-lang.org/) instalado no seu computador para testar os exemplos. Apenas execute o programa **menu.exe** no Windows ou **menu** no Linux. Importante salientar que o executável
+Não é necessário que você possua [Red](https://www.red-lang.org/) instalado no seu computador para testar os exemplos. Apenas clone o repositórios ou baixeexecute o programa **menu.exe** no Windows ou **menu** no Linux. Importante salientar que o executável
 
 [Releases](https://github.com/guaracy/Red/releases/tag/1)
 - Os executáveis para Windows foram gerados no Linux usando ```red -r -t windows code.red``` o que significa que podem não terem sido testados corretamente. 
