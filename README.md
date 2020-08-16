@@ -19,12 +19,12 @@ view[
  button "Run" [do a/text]
 ]
 ```
-
+#### Windows
 ![](https://github.com/guaracy/OneTweetRedCode/blob/master/png/menu.png)
-Windows
 
+#### Linux
 ![](https://github.com/guaracy/OneTweetRedCode/blob/master/png/menu-linux.png)
-Linux
+
 
 ## Calculadora de datas
 
