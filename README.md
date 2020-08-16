@@ -4,6 +4,8 @@ A ideia inicial é escrever um código GUI completo em Red, com alguma utilidade
 
 Não é necessário que você possua [Red](https://www.red-lang.org/) instalado no seu computador para testar os exemplos. Apenas clone o repositórios ou baixe o arquivo [master.zip](https://github.com/guaracy/OneTweetRedCode/archive/master.zip), descompacte e execute o programa ```menu.exe``` no Windows ou ```menu``` no Linux. Note que a versão com o backed para GTK ainda não foi disponibilizada, portanto, alguma widgets podem aparecer ou funcionar de forma incorreta. Para Linux 64 bits, veja as instruções deste [link](https://github.com/rcqls/reds/blob/master/README-RedGTK.md).
 
+Mensagens de "commit" fornecidas por http://whatthecommit.com/index.txt :D
+
 ## Menu
 
 Le todos os arquivos .red da pasta e coloca-os em um lista. Ao ser selecionado, o programa é mostrado no texto à direita e pode ser executado clicando no botão Run. É possível efetuar alterações no fonte e rodá-lo novamente. As alterações não serão gravadas. 
