@@ -21,6 +21,10 @@ view[
 ```
 
 ![](https://github.com/guaracy/OneTweetRedCode/blob/master/png/menu.png)
+Windows
+
+![](https://github.com/guaracy/OneTweetRedCode/blob/master/png/menu-linux.png)
+Linux
 
 ## Calculadora de datas
 
