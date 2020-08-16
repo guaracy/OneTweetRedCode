@@ -2,7 +2,8 @@
 
 A ideia inicial é escrever um código GUI completo em Red, com alguma utilidade e que possa ser colado em um tweet (até 280 caracteres). Devido ao tamanho, geralmente a entrada de algum dado não será checada, o título da janela pode ser omitido, espaços desnecessários são excluídos, sequência de comandos em uma linha, etc. 
 
-Não é necessário que você possua [Red](https://www.red-lang.org/) instalado no seu computador para testar os exemplos. Apenas clone o repositórios ou baixe o arquivo [master.zip](https://github.com/guaracy/OneTweetRedCode/archive/master.zip), descompacte e execute o programa **menu.exe** no Windows ou **menu** no Linux. Note que a versão com o backed para GTK ainda não foi disponibilizada, portanto, alguma widgets podem aparecer ou funcionar de forma incorreta.
+Não é necessário que você possua [Red](https://www.red-lang.org/) instalado no seu computador para testar os exemplos. Apenas clone o repositórios ou baixe o arquivo [master.zip](https://github.com/guaracy/OneTweetRedCode/archive/master.zip), descompacte e execute o programa **menu.exe** no Windows ou **menu** no Linux. Note que a versão com o backed para GTK ainda não foi disponibilizada, portanto, alguma widgets podem aparecer ou funcionar de forma incorreta. Para Linux 64 bits, veja as instruções deste [link](https://github.com/rcqls/reds/blob/master/README-RedGTK.md).
+[]
 
 ## Menu
 
