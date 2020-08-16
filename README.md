@@ -134,4 +134,4 @@ view [
 ]
 ```
 
-![](https://github.com/guaracy/OneTweetRedCode/blob/master/png/colors.png)
+![](https://github.com/guaracy/OneTweetRedCode/blob/master/png/ipinfo.png)
