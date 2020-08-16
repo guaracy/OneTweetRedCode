@@ -2,8 +2,7 @@ Red [needs: 'view]
 t: 0
 view [ 
   title "Timer"
-  backdrop white
-  below
+  backdrop white below
   c: h1 bold 180 rate 1 
   on-time [
     c/text: form now/time
