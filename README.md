@@ -6,7 +6,7 @@ Não é necessário que você possua [Red](https://www.red-lang.org/) instalado 
 
 ## Menu
 
-Le todos os arquivos .red e coloca-os em um lista. Ao ser selecionado, o programa é mostrado no texto à direita e pode ser executado clicando no botão Run. É possível efetuar alterações no fonte e rodá-lo novamente. As alterações não serão gravadas. Para caber nos 280 caracteres, não foi colocado um título na janela do programa.
+Le todos os arquivos .red e coloca-os em um lista. Ao ser selecionado, o programa é mostrado no texto à direita e pode ser executado clicando no botão Run. É possível efetuar alterações no fonte e rodá-lo novamente. As alterações não serão gravadas. 
 
 ```red
 Red [Needs: 'View]
@@ -20,7 +20,7 @@ view[
 ]
 ```
 
-![](https://github.com/guaracy/Red/blob/master/OneTweetCode/png/datecalc.png)
+![](https://github.com/guaracy/OneTweetRedCode/blob/master/png/menu.png)
 
 ## Calculadora de datas
 
@@ -40,7 +40,7 @@ view[
 ]
 ```
 
-![](https://github.com/guaracy/Red/blob/master/OneTweetCode/png/datecalc.png)
+![](https://github.com/guaracy/OneTweetRedCode/blob/master/png/datecalc.png)
 
 ## Timer
 
@@ -62,7 +62,7 @@ view [
 ]
 ```
 
-![](https://github.com/guaracy/Red/blob/master/OneTweetCode/png/timer.png)
+![](https://github.com/guaracy/OneTweetRedCode/blob/master/png/timer.png)
 
 ## QR-code
 
@@ -83,7 +83,7 @@ view [
 ]
 ```
 
-![](https://github.com/guaracy/Red/blob/master/OneTweetCode/png/qrcode.png)
+![](https://github.com/guaracy/OneTweetRedCode/blob/master/png/qrcode.png)
 
 ## Colors
 
@@ -105,4 +105,5 @@ view [
 ]
 ```
 
-![](https://github.com/guaracy/Red/blob/master/OneTweetCode/png/colors.png)
+![](https://github.com/guaracy/OneTweetRedCode/blob/master/png/colors.png)
+
