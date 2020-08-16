@@ -1,8 +1,8 @@
 # OneTweetRedCode
 
-A ideia inicial é escrever código GUI completo em Red, com alguma utilidade e que possa ser colado em um tweet (até 280 caracteres). Devido ao tamanho, geralmente a entrada de algum dado não será checada, o título da janela pode ser omitido, etc. 
+A ideia inicial é escrever um código GUI completo em Red, com alguma utilidade e que possa ser colado em um tweet (até 280 caracteres). Devido ao tamanho, geralmente a entrada de algum dado não será checada, o título da janela pode ser omitido, espaços desnecessários são excluídos, sequência de comandos em uma linha, etc. 
 
-Não é necessário que você possua [Red](https://www.red-lang.org/) instalado no seu computador para testar os exemplos. Apenas clone o repositórios ou baixe o arquivo [master.zip](https://github.com/guaracy/OneTweetRedCode/archive/master.zip), descompacte e execute o programa **menu.exe** no Windows ou **menu** no Linux. Note que a versão com o backed para GTK ainda não foi disponibilizada portanto, alguma widgets podem aparecer ou funcionar de forma incorreta.
+Não é necessário que você possua [Red](https://www.red-lang.org/) instalado no seu computador para testar os exemplos. Apenas clone o repositórios ou baixe o arquivo [master.zip](https://github.com/guaracy/OneTweetRedCode/archive/master.zip), descompacte e execute o programa **menu.exe** no Windows ou **menu** no Linux. Note que a versão com o backed para GTK ainda não foi disponibilizada, portanto, alguma widgets podem aparecer ou funcionar de forma incorreta.
 
 ## Menu
 
@@ -10,11 +10,11 @@ Le todos os arquivos .red e coloca-os em um lista. Ao ser selecionado, o program
 
 ```red
 Red [Needs: 'View]
-view [
+view[
  l: text-list 150x300
- on-select [a/text: read to-file l/data/(l/selected)]
- a: area 400x300 bold font-name system/view/fonts/fixed
- do [l/data: collect [foreach f read %. [ if ".red" = suffix? f [keep to-string f]]]]
+ on-change [a/text: read to-file l/data/(l/selected)]
+ a: area 400x300 font-name system/view/fonts/fixed
+ do [l/data: collect [foreach f read %. [if ".red" = suffix? f [keep to-string f]]]]
  return
  button "Run" [do a/text]
 ]
