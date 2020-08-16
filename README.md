@@ -113,3 +113,25 @@ view [
 
 ![](https://github.com/guaracy/OneTweetRedCode/blob/master/png/colors.png)
 
+## IPinfo
+
+Retorna o número do seu IP e outras informações retornadas no formato JSON do site gd.geobytes.
+
+
+```red
+Red [Needs: 'view]
+
+view [
+  title "IP info"
+  below 
+  lip: text-list 400x300 font-name system/view/fonts/fixed font-size 8 data []
+  do [
+    p: load http://gd.geobytes.com/GetCityDetails
+    foreach k keys-of p [
+      append lip/data rejoin [pad k 30 select p k]
+    ]
+  ]
+]
+```
+
+![](https://github.com/guaracy/OneTweetRedCode/blob/master/png/colors.png)
