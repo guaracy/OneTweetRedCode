@@ -94,7 +94,7 @@ Red [needs: 'view]
 w: words-of system/words
 t: collect [
   forall w [
-    if tuple? attempt [get w/1][keep to-string w/1]
+    if tuple? get/any w/1 [keep to-string w/1]
   ]
 ]
 view [
