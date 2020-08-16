@@ -7,7 +7,7 @@ t: collect [
 ]
 view [
   title "Red colors"
-  lc: text-list data t
-  on-change [b/color: do to-word lc/data/(lc/selected)]
+  l: text-list data t
+  on-change [b/color: do to-word l/data/(l/selected)]
  b: base 100x100 transparent
 ]
