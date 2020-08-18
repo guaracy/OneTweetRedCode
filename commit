@@ -1,4 +1,0 @@
-#! /bin/bash
-git add .
-git commit -m "$(curl -sk whatthecommit.com/index.txt)"
-git push 
