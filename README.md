@@ -6,7 +6,7 @@ Não é necessário que você possua [Red](https://www.red-lang.org/) instalado 
 
 ## Menu
 
-Le todos os arquivos .red da pasta e coloca-os em um lista. Ao ser selecionado, o programa é mostrado no texto à direita e pode ser executado clicando no botão Run. É possível efetuar alterações no fonte e rodá-lo novamente. As alterações não serão gravadas. 
+Le todos os arquivos .red da pasta e coloca-os em um lista. Ao ser selecionado, o programa é mostrado no texto à direita e pode ser executado clicando no botão Run. É possível efetuar alterações no fonte e rodá-lo novamente. As alterações não serão gravadas. Devido ao tamanho (279 caracteres) você não deve rodar o programa ```menu.red```. Pronto. Foi avisado.
 
 ```red
 
@@ -49,7 +49,7 @@ view[
 
 ## Timer
 
-Mostra um cronômetro. É possível informar um determinado número de segundos e pressionar o botão **timer** Quando o tempo for atingido, o cronômetro ficará vermelho. Repita a operação para novos intervalos.. 
+Mostra um cronômetro. É possível informar um determinado número de segundos e pressionar o botão **timer** Quando o tempo for atingido, o cronômetro ficará vermelho. Repita a operação para novos intervalos. 
 
 ```red
 Red [needs: 'view]
@@ -134,3 +134,26 @@ view [
 ```
 
 ![](https://github.com/guaracy/OneTweetRedCode/blob/master/png/ipinfo.png)
+
+## spritesheet
+
+Animação de sprites. Poderia ter escrito ```png: load http://untamed.wild-refuge.net/images/rpgxp/ff/bahamut.png``` e ter lido diretamente do site mas passaria dos 280 caracteres. Com os recursos do [Untamed.wild-refuge.net](http://untamed.wild-refuge.net/) já é possível desenvolver algum jogo. Execute o programa alterando o valor de y entre: 0, 96, 192 e 288.
+
+```red
+Red [Needs: 'View]
+png: load %./bahamut.png
+s: 96x96
+y: 192
+p: as-pair 0 y
+l: 96 * 3 - 1
+view [
+ title "spritesheet"
+ canvas: base 96x96 transparent rate 5
+ on-time [
+  either p/x > l [p: as-pair 0 y][p: p + 96x0]
+  canvas/draw: reduce['image png 0x0 'crop p s]
+ ]
+]
+```
+
+![](https://github.com/guaracy/OneTweetRedCode/blob/master/gif/spritesheet.gif)
