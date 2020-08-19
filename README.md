@@ -11,6 +11,7 @@ Não é necessário que você possua [Red](https://www.red-lang.org/) instalado 
 - [Colors](#Colors "Colors")
 - [IPinfo](#IPinfo "IPinfo")
 - [Sprite animator](#Sprite-animator "Sprite animator")
+- [Background scroller](#Background-scroller "Background scroller")
 
 ## Menu
 
@@ -165,3 +166,27 @@ view [
 ```
 
 ![](https://github.com/guaracy/OneTweetRedCode/blob/master/gif/spriteanim.gif)
+
+## Background scroller
+
+Exemplo de rolagem horizontal do fundo. Basicamente um jogo de *ação* pode rolar o fundo, apenas movimentar o personagem em um cenário ou os dois. Existem diversas formas mas esta é para caber nos 280 caracteres. Juntando este com o programa anterior já é possível pensar em um jogo. Como a rolagem é horizontal, o personagem deverá (não necessáriamente) pular, abaixar e atacar. O mais difícil é o roteiro do jogo.
+
+```red
+Red [Needs: 'View]
+png: load %./desert.png
+x: 0
+view [
+ title "Background scroller"
+ canvas: base 200x200 rate 30
+ on-time [
+  p1: as-pair x 0
+  canvas/draw: reduce[
+   'image png 0x0 'crop p1 300x200
+  ]
+  x: x + 1
+  if x > 400 [x: 1]
+ ]
+]
+```
+
+![](https://github.com/guaracy/OneTweetRedCode/blob/master/gif/bgscroll.gif)
