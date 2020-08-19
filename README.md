@@ -4,6 +4,14 @@ A ideia inicial é escrever um código GUI completo em Red, com alguma utilidade
 
 Não é necessário que você possua [Red](https://www.red-lang.org/) instalado no seu computador para testar os exemplos. Apenas clone o repositório ou baixe o arquivo [master.zip](https://github.com/guaracy/OneTweetRedCode/archive/master.zip), descompacte e execute o programa ```menu.exe``` no Windows ou ```menu``` no Linux. Note que a versão com o backed para GTK ainda não foi disponibilizada, portanto, alguma widgets podem aparecer ou funcionar de forma incorreta. Para Linux 64 bits, veja as instruções deste [link](https://github.com/rcqls/reds/blob/master/README-RedGTK.md).
 
+- [Menu](#Menu "Menu")
+- [Calculadora de datas](#Calculadora-de-datas "Calculadora de datas")
+- [Timer](#Timer "Timer")
+- [QR-code](#QR-code "QR-code")
+- [Colors](#Colors "Colors")
+- [IPinfo](#IPinfo "IPinfo")
+- [Sprite animator](#Sprite-animator "Sprite animator")
+
 ## Menu
 
 Le todos os arquivos .red da pasta e coloca-os em um lista. Ao ser selecionado, o programa é mostrado no texto à direita e pode ser executado clicando no botão Run. É possível efetuar alterações no fonte e rodá-lo novamente. As alterações não serão gravadas. Devido ao tamanho (279 caracteres) você não deve rodar o programa ```menu.red```. Pronto. Foi avisado.
@@ -135,9 +143,9 @@ view [
 
 ![](https://github.com/guaracy/OneTweetRedCode/blob/master/png/ipinfo.png)
 
-## spritesheet
+## Sprite animator
 
-Animação de sprites. Poderia ter escrito ```png: load http://untamed.wild-refuge.net/images/rpgxp/ff/bahamut.png``` e ter lido diretamente do site mas passaria dos 280 caracteres. Com os recursos do [Untamed.wild-refuge.net](http://untamed.wild-refuge.net/) já é possível desenvolver algum jogo. Execute o programa alterando o valor de y entre: 0, 96, 192 e 288.
+Animação de sprites. Poderia ter escrito ```png: load http://untamed.wild-refuge.net/images/rpgxp/ff/bahamut.png``` e ter lido diretamente do site mas passaria dos 280 caracteres. Com os recursos do [Untamed.wild-refuge.net](http://untamed.wild-refuge.net/rpgxp.php) já é possível desenvolver algum jogo. Execute o programa alterando o valor de y entre: 0, 96, 192 e 288.
 
 ```red
 Red [Needs: 'View]
@@ -156,4 +164,4 @@ view [
 ]
 ```
 
-![](https://github.com/guaracy/OneTweetRedCode/blob/master/gif/spritesheet.gif)
+![](https://github.com/guaracy/OneTweetRedCode/blob/master/gif/spriteanim.gif)
