@@ -1,7 +1,7 @@
 Red [Needs: 'View]
 png: load %./bahamut.png
 s: 96x96
-y: 192
+y: 288
 p: as-pair 0 y
 l: 96 * 3 - 1
 view [
